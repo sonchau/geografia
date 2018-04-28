@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Data correctly 1`] = `
+<div
+  className="content-container"
+>
+  <Connect(Chart) />
+  <button
+    className="button"
+    onClick={[Function]}
+    value="dlgc_2011_ste_demo_age5gend"
+  >
+     Year 2011
+  </button>
+  <button
+    className="button"
+    onClick={[Function]}
+    value="dlgc_2016_ste_demo_age5gend"
+  >
+     Year 2016
+  </button>
+</div>
+`;

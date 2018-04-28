@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Chart correctly 1`] = `
+<div
+  className="chart"
+>
+  <Bar
+    data={
+      Object {
+        "datasets": Array [
+          Object {
+            "backgroundColor": "blue",
+            "data": Array [
+              "1",
+            ],
+            "hoverBackgroundColor": "rgba(4,12,96,0.4)",
+            "label": "Male",
+          },
+          Object {
+            "backgroundColor": "red",
+            "data": Array [
+              "2",
+            ],
+            "hoverBackgroundColor": "rgba(94,2,2,0.4)",
+            "label": "Female",
+          },
+        ],
+        "labels": undefined,
+      }
+    }
+    options={
+      Object {
+        "legend": Object {
+          "display": true,
+          "position": "top",
+        },
+        "title": Object {
+          "display": true,
+          "fontSize": 40,
+          "text": "Age Sex Chart",
+        },
+      }
+    }
+  />
+</div>
+`;
