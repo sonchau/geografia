@@ -54,19 +54,15 @@ This project does not use responsive cause the layout is very simple.
 
 3. src/components: contains all the state and stateless of react components.
 
-4. src/firebase: is the config setting for google and facebook authentication; firebase, googleAuthProvider, facebookAuthProvider are export as name export; database is exported as default.
+4. src/routers: This app only has 1 main route. When user visits root path, it will render DashboardPage component.
 
-5. src/routers: High order component is used to identify if user is authenticated then user can access to PrivateRoute, if not they can only access PublicRoute.
+5. src/selectors: it contains some functions to build select query to make ajax call. Also it constructs the data objects and array for the graph
 
-6. src/selectors: it contains functions which accept an object and return another structure object which is used to render UI.
+7. src/store: it enables redux-thunk by applyMiddleware and return combineReducers of data.
 
-7. src/data: is the data input for this project, it is a list of objects.
+8. src/styles: contains all the style of project. This project uses SASS; css-loader, sass-loader are also used; sourceMap is set to true to make it easier for development; extract-text-webpack-plugin is used to bundle all css into styles.css
 
-8. src/store: it enables redux-thunk by applyMiddleware and return combineReducers of data.
-
-9. src/styles: contains all the style of project. This project uses SASS; css-loader, sass-loader are also used; sourceMap is set to true to make it easier for development; extract-text-webpack-plugin is used to bundle all css into styles.css
-
-10. app.js: this is the main execution file.
+9. app.js: this is the main execution file.
 
 # Testing
 
@@ -76,7 +72,7 @@ Jest snapshot testing are used and all components must have it own snapshot in s
 
 ### Interaction testing
 
-Enzyme is used to simulate user input such as src/tests/components/LoginPage.test.js
+Enzyme is used to simulate user click event such as src/tests/components/Data.test.js
 
 ### Unit testing
 
