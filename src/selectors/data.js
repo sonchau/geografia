@@ -9,7 +9,7 @@ export const buildQuery = (year) => {
 
 export const getLabels = (data) => {
     let groups = data.map((item)=> {
-        return item.age5p_age_in_five_year_groups
+        return item.age5p_age_in_five_year_groups.split(" ")[0]
     })
     return Array.from(new Set(groups))
 }

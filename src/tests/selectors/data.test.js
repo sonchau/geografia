@@ -13,7 +13,7 @@ test('should build query and return query', () => {
 
 test('should get all the labels', () => {
     const result = getLabels(data);
-    expect(result).toEqual(['0-4 years', '5-9 years', '10-14 years']);
+    expect(result).toEqual(['0-4', '5-9', '10-14']);
 });
 
 test('should get all male', () => {
@@ -29,7 +29,7 @@ test('should get all female', () => {
 test('should get data object', () => {
     const result = getData(data);
     expect(result).toEqual({
-        label: ['0-4 years', '5-9 years', '10-14 years'],
+        label: ['0-4', '5-9', '10-14'],
         male: [83156, 84278, 77299],
         female: [78572, 79873, 73504]
     });

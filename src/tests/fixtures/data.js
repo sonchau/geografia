@@ -37,7 +37,7 @@ export const endpointData = {
 }
 
 export const chartData = {
-    label: ['5-9 years', '10-14 years'],
+    label: ['5-9', '10-14'],
     male: [3, 5],
     female: [2, 6]
 }
