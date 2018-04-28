@@ -23,7 +23,13 @@ This will display all UI tests, you can view it on http://localhost:9001/
 
 Please follow the instruction https://storybook.js.org/basics/quick-start-guide/ to install storybook locally.
 
-NOTE: This project is set up to run on Ubuntu 14, some of the dependencies may be required differently on other operating system.
+8. Gemini screenshot tests, you need to have 3 terminals opened. First terminal is running storybook ( `npm run storybook`), on second terminal needs to start selenium server (`selenium-standalone start`), and on the third terminal you can run screenshot tests `npm run gemini-test`
+
+9. `npm run cypress:open`
+
+Click on "Run all tests" to run all end to end tests. Please make sure your dev-server is running.
+
+NOTE: This project is set up to run on Ubuntu 14, some of the dependencies may be required differently on other operating systems.
 
 # Technology used
 ### ES6
