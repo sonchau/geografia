@@ -9,6 +9,7 @@
   padding: $s-size;
   text-decoration: none;
   margin: $s-size;
+  cursor: pointer;
 }
 
 .button--link {
@@ -17,4 +18,9 @@
 
 .button--secondary {
   background: #888;
+}
+
+button:disabled {
+  cursor: default;
+  background: #6c757d;
 }

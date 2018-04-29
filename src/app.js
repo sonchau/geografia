@@ -7,6 +7,7 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import {startSetData} from './actions/data';
 import LoadingPage from './components/LoadingPage';
+import pageLoadYear from './data/data';
 
 const store = configureStore();
 const jsx = (
@@ -25,7 +26,6 @@ const renderApp = () => {
 };
 ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
-const pageLoadYear = 'dlgc_2016_ste_demo_age5gend';
 store.dispatch(startSetData(pageLoadYear)).then(()=> {
   renderApp();
 })
