@@ -6,16 +6,13 @@ import pageLoadYear from '../data/data';
 
 export class Data extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: pageLoadYear
-        }
+    state = {
+        value: pageLoadYear
     }
-    
-    handleOnClick = (props) => {
-        this.props.handleOnClick(props.target.value);
-        this.setState({value: props.target.value});
+
+    handleOnClick = (e) => {
+        this.props.handleOnClick(e.target.value);
+        this.setState({value: e.target.value});
     }
 
     render(props) {
